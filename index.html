@@ -7,7 +7,7 @@
     <title>Jordan Overbye</title>
     <meta
       name="description"
-      content="Web developer based in Brisbane, Australi"
+      content="Software Developer based in Brisbane, Australia who enjoys working with React, Node and GraphQL"
     />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <style>
@@ -19,8 +19,9 @@
 
       :root {
         --color-bg: pink;
-        --color-text: blue;
-        --color-link: black;
+        --color-text: black;
+        --color-link: blue;
+        --color-link-hover: purple;
         --font: "Inter UI", sans-serif;
       }
 
@@ -47,13 +48,20 @@
 
       @media screen and (min-width: 1024px) {
         body {
-          font-size: calc(1rem + 4vw);
+          font-size: calc(1rem + 3.5vw);
           padding: 2rem;
         }
       }
 
       p {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      ul {
+        list-style: none;
         margin: 0;
+        padding: 0;
       }
 
       a,
@@ -62,25 +70,42 @@
         color: var(--color-link);
         text-decoration: none;
         line-height: 1;
+        border-bottom: 6px solid;
       }
 
       a:hover,
       a:focus {
-        border-bottom: 6px solid;
+        color: var(--color-link-hover);
       }
     </style>
   </head>
   <body>
     <p>
-      Web Developer at
+      👋 Hi, I'm a Software Developer at
       <a
         href="https://www.thinkmill.com.au/"
         target="_blank"
         rel="noopener noreferer"
-        >Thinkmill</a
+        >Thinkmill&#8599;</a
       >
-      based in Brisbane, Australia<br />
-      <a href="mailto:jordanoverbye@gmail.com">jordanoverbye@gmail.com</a>
+      who enjoys working with React, Node and GraphQL.
     </p>
+    <ul>
+      <li>
+        <a href="mailto:jordanoverbye@gmail.com"
+          >jordanoverbye@gmail.com&#8599;</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/jordanoverbye" target="_blank"
+          >Github&#8599;</a
+        >
+      </li>
+      <li>
+        <a href="https://twitter.com/JordanOverbye" target="_blank"
+          >Twitter&#8599;</a
+        >
+      </li>
+    </ul>
   </body>
 </html>
